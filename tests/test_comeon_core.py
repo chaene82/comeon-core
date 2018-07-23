@@ -26,5 +26,5 @@ def test_package(response):
    # from comeon_core import update
     #init_db()
     #update()
-     assert True 
+    assert True 
 

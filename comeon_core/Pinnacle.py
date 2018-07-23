@@ -17,6 +17,20 @@ pin_user = slack_key = os.environ['comeon_pin_username']
 pin_passwd = slack_key = os.environ['comeon_pin_passwd']
 
 
+def removeTime (datetime) :
+    """
+    CRemove the time form the datetime input
+    
+    Args:
+        datetime:  a datetime variable
+        
+    Returns:
+        a date 
+        -
+        
+    """
+    return datetime[:10]
+
 ## Class for as Wrapper
 
 
