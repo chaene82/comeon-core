@@ -29,7 +29,7 @@ def test_package(response):
     
     # from comeon_core import update
     getIP()
-    #db = connect()
+    db = connect()
     #engine = db.connect()  
     #init_db(engine)
     #update()
