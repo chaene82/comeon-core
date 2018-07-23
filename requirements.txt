@@ -6,3 +6,4 @@ pandas==0.20.3
 slackclient==1.2.1 
 #socket==0.48.0
 pinnacle==0.0.6
+requests==2.19.1

@@ -14,7 +14,7 @@ from .Pinnacle import pinnacle
 
 import datetime
 
-from tables import Players, Events
+from .tables import Players, Events
  
 import socket
 print (socket.gethostbyname(socket.gethostname()))
@@ -22,15 +22,11 @@ print (socket.gethostbyname(socket.gethostname()))
 
 #from .tennis_config import *
 
-
-
-
-
-db_host = slack_key = os.environ['comeon_db_host']
-db_name = slack_key = os.environ['comeon_db_name']
-db_user = slack_key = os.environ['comeon_db_user']
-db_passwd = slack_key = os.environ['comeon_db_passwd']
-db_port = slack_key = os.environ['comeon_db_port']
+db_host = os.environ['comeon_db_host']
+db_name = os.environ['comeon_db_name']
+db_user = os.environ['comeon_db_user']
+db_passwd = os.environ['comeon_db_passwd']
+db_port = os.environ['comeon_db_port']
 
 
 
