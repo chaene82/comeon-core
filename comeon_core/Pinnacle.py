@@ -10,11 +10,14 @@ import pandas as pd
 from pinnacle.apiclient import APIClient
 import collections
 from base import startBetLogging, removeTime
-import yaml
+import os
 
 
 
 log = startBetLogging("pinnacle Wrapper")
+
+pin_user = slack_key = os.environ['comeon_pin_username']
+pin_passwd = slack_key = os.environ['comeon_pin_passwd']
 
 
 
@@ -28,9 +31,7 @@ class pinnacle:
     odds = None
     
     def __init__(self):
-        with open("config.yml", 'r') as ymlfile:
-            self.cfg = yaml.load(ymlfile)          
-            self.api = APIClient(self.cfg['pinnacle']['api']['username'] , self.cfg['pinnacle']['api']['password'] )
+        self.api = APIClient(pin_user, pin_passwd)
                   
     
     def checkBalance(self) :
