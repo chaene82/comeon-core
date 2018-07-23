@@ -8,7 +8,7 @@ python:
 
 
 #dist: trusty
-#sudo: false
+sudo: false
 
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install: 
