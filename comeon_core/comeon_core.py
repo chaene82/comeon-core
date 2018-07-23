@@ -25,7 +25,7 @@ db_name = os.environ['comeon_db_name']
 db_user = os.environ['comeon_db_user']
 db_passwd = os.environ['comeon_db_passwd']
 db_port = os.environ['comeon_db_port']
-
+ 
 
 
 def connect(db=db_name, user=db_user, password=db_passwd, host=db_host, port=db_port):
