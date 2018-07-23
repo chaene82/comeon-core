@@ -11,8 +11,6 @@ from pinnacle.apiclient import APIClient
 import collections
 import os
 
-
-
 #log = startBetLogging("pinnacle Wrapper")
 
 pin_user = slack_key = os.environ['comeon_pin_username']
