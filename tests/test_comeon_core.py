@@ -6,7 +6,7 @@
 import pytest
 
 from comeon_core import comeon_core
-from comeon_core import init_db, update
+from comeon_core import init_db, update, connect
 #from comeon_core import comeon_core
 
 
@@ -21,10 +21,12 @@ def response():
 
 
 def test_package(response):
-    """Sample pytest test function with the pytest fixture as an argument."""
+    """Initial the database and update data"""
     
-   # from comeon_core import update
-    init_db()
+    # from comeon_core import update
+    db = connect()
+    engine = db.connect()  
+    init_db(engine)
     update()
     assert True 
 
