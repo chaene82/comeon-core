@@ -10,6 +10,7 @@ from comeon_core import init_db, update, connect
 #from comeon_core import comeon_core
 
 
+
 @pytest.fixture
 def response():
     """Sample pytest fixture.
