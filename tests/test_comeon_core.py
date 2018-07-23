@@ -5,8 +5,9 @@
 
 import pytest
 
-
 from comeon_core import comeon_core
+from comeon_core import init_db
+#from comeon_core import comeon_core
 
 
 @pytest.fixture
@@ -21,7 +22,7 @@ def response():
 
 def test_package(response):
     """Sample pytest test function with the pytest fixture as an argument."""
-    from comeon_core import init_db
+    
    # from comeon_core import update
     init_db()
     #update()

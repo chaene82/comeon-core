@@ -9,7 +9,7 @@ Created on Sun Sep 10 16:19:16 2017
 import pandas as pd
 from pinnacle.apiclient import APIClient
 import collections
-from base import startBetLogging, removeTime
+from .base import startBetLogging, removeTime
 import os
 
 
