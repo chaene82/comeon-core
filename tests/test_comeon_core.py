@@ -32,7 +32,17 @@ def test_package(response):
     print(ip)
     db = connect()
     engine = db.connect()  
-    #init_db(engine)
+    init_db(engine)
     #update()
     assert True 
 
+
+def test_ip(response):
+    """Initial the database and update data"""
+    
+    # from comeon_core import update
+    ip = getIP()
+    print(ip)
+    #init_db(engine)
+    #update()
+    assert True 
