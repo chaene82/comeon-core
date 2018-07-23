@@ -31,8 +31,8 @@ def test_package(response):
     IP = ipgetter.myip()
     print(IP)
     db = connect()
-    engine = db.connect()  
-    init_db(engine)
+    #engine = db.connect()  
+    #init_db(engine)
     #update()
     assert True 
 
