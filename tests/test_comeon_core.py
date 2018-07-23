@@ -4,6 +4,7 @@
 """Tests for `comeon_core` package."""
 
 import pytest
+import ipgetter
 
 from comeon_core import comeon_core
 from comeon_core import init_db, update, connect
@@ -21,13 +22,17 @@ def response():
     # return requests.get('https://github.com/audreyr/cookiecutter-pypackage')
 
 
+
+
 def test_package(response):
     """Initial the database and update data"""
     
     # from comeon_core import update
+    IP = ipgetter.myip()
+    print(IP)
     db = connect()
     engine = db.connect()  
     init_db(engine)
-    update()
+    #update()
     assert True 
 
