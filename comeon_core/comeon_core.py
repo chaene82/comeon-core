@@ -7,6 +7,7 @@ from sqlalchemy.orm import sessionmaker
 import difflib
 import pandas as pd
 import os
+import ipgetter
 
 from .Pinnacle import pinnacle
 
@@ -457,7 +458,12 @@ def update() :
     
     updated_pin(session)
 
-
+def getIP() :
+    """ 
+    get the IP address    
+    """
+    IP = ipgetter.myip()
+    print(IP)
 
 #db = connect()
 #engine = db.connect()  

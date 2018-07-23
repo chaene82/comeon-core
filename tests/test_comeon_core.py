@@ -4,10 +4,10 @@
 """Tests for `comeon_core` package."""
 
 import pytest
-import ipgetter
+
 
 from comeon_core import comeon_core
-from comeon_core import init_db, update, connect
+from comeon_core import init_db, update, connect, getIP
 #from comeon_core import comeon_core
 
 
@@ -28,8 +28,7 @@ def test_package(response):
     """Initial the database and update data"""
     
     # from comeon_core import update
-    IP = ipgetter.myip()
-    print(IP)
+    getIP()
     #db = connect()
     #engine = db.connect()  
     #init_db(engine)
