@@ -6,7 +6,7 @@
 import pytest
 
 from comeon_core import comeon_core
-from comeon_core import init_db
+from comeon_core import init_db, update
 #from comeon_core import comeon_core
 
 
@@ -25,6 +25,6 @@ def test_package(response):
     
    # from comeon_core import update
     init_db()
-    #update()
+    update()
     assert True 
 
