@@ -33,7 +33,7 @@ def test_package(response):
     db = connect()
     engine = db.connect()  
     init_db(engine)
-    update()
+    update(engine)
     assert True 
 
 
