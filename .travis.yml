@@ -5,8 +5,8 @@ python:
   - 3.6
 #  - 3.5
 
-dist: trusty
-sudo: false
+#dist: trusty
+#sudo: false
 
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install: 
