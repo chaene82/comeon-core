@@ -463,7 +463,7 @@ def getIP() :
     get the IP address    
     """
     IP = ipgetter.myip()
-    print(IP)
+    return IP
 
 #db = connect()
 #engine = db.connect()  

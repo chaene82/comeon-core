@@ -28,7 +28,8 @@ def test_package(response):
     """Initial the database and update data"""
     
     # from comeon_core import update
-    getIP()
+    ip = getIP()
+    print(ip)
     db = connect()
     engine = db.connect()  
     #init_db(engine)
