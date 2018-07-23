@@ -10,18 +10,20 @@ import difflib
 import pandas as pd
 import os
 
-from Pinnacle import pinnacle
+from .Pinnacle import pinnacle
 
 import datetime
 
 from tables import Players, Events
+ 
+import socket
+print (socket.gethostbyname(socket.gethostname()))
+
 
 #from .tennis_config import *
 
 
-# load data from the configuration
-with open("../config.yml", 'r') as ymlfile:
-    cfg = yaml.load(ymlfile)
+
 
 
 db_host = slack_key = os.environ['comeon_db_host']
