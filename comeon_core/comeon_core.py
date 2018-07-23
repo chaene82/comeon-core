@@ -28,7 +28,6 @@ db_port = os.environ['comeon_db_port']
 
 
 
-
 def connect(db=db_name, user=db_user, password=db_passwd, host=db_host, port=db_port):
     """
     Returns a connection and a metadata object from the postgres DB
