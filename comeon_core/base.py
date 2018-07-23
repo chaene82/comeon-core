@@ -11,42 +11,6 @@ import logging
 from slacker_log_handler import SlackerLogHandler
 #from .tennis_config import *
 
-# load data from the configuration
-import yaml
-with open("config.yml", 'r') as ymlfile:
-    cfg = yaml.load(ymlfile)
-    
-
-
-def connect(db=cfg['database']['db'], user=cfg['database']['user'], password=cfg['database']['pwd'], host=cfg['database']['host'], port=cfg['database']['port']):
-    """
-    Returns a connection and a metadata object from the postgres DB
-    
-    Args:
-        db (str): Name of the database to connect.   
-        user (str): Name of the database user to connect.    
-        password (str): the password for the user to connect.    
-        host (str): Name or IP address of the node to connect.    
-        port (int): Number of the db port.
-        
-    Returns:
-        con: A database connection
-        mate: a database meta object
-        
-    """
-    # We connect with the help of the PostgreSQL URL
-    # postgresql://federer:grandestslam@localhost:5432/tennis
-    url = 'postgresql://{}:{}@{}:{}/{}'
-    url = url.format(user, password, host, port, db)
-
-    # The return value of create_engine() is our connection object
-    con = create_engine(url , client_encoding='utf8')
-
-    # We then bind the connection to MetaData()
-    meta = MetaData()
-    meta.reflect(con)
-
-    return con, meta
 
 
 def startBetLogging(application) :

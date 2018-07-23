@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 """Main module."""
 
 
@@ -10,11 +8,11 @@ import difflib
 import pandas as pd
 import os
 
-from .Pinnacle import pinnacle
+from Pinnacle import pinnacle
 
 import datetime
 
-from .tables import Players, Events
+from tables import Players, Events
  
 import socket
 print (socket.gethostbyname(socket.gethostname()))
